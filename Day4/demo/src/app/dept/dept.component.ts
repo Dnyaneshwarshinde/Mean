@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DeptComponent  {
   depts= [];
-  constructor() 
+  constructor()
   {
     this.depts = [
         {"DNo": 11, "DName": "IT1", "DCity": "Banglore1"},
@@ -17,8 +17,8 @@ export class DeptComponent  {
    }
    DoSomething()
     {
-  //    console.log("Hello");
-//      this.depts.push({"DNo": 10, "DName": "admin", "DCity": "pune"});
+     console.log("Hello");
+this.depts.push({"DNo": 10, "DName": "admin", "DCity": "pune"});
       this.depts.splice(0,1);
     }
 

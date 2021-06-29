@@ -1,6 +1,6 @@
 var http= require("http");
 
-var myData = 
+var myData =
 [
     {No : 11, Name: "Mahesh1", Address: "Pune1"},
     {No : 12, Name: "Mahesh2", Address: "Pune2"},
@@ -8,7 +8,7 @@ var myData =
 ];
 
 var server= http.createServer(function(request, response){
-    // console.log("Server is processing the request");    
+    // console.log("Server is processing the request");
     //response.write("request received for " + request.url);
     // response.write("Hello From Node Server");
     if(request.url == "/")
@@ -33,7 +33,7 @@ var server= http.createServer(function(request, response){
 
 
 server.on("connection",function(){
-    console.log("New Request Received...");    
+    console.log("New Request Received...");
 });
 
 server.listen(5000);
